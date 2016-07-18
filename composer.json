@@ -1,0 +1,13 @@
+{
+    "name": "arandilopez/laravel-profane",
+    "description": "Laravel 5.X Profanity Valitador",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arandi Lopez",
+            "email": "arandilopez.93@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
