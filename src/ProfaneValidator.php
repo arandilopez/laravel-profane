@@ -27,10 +27,10 @@ class ProfaneValidator
    * @param  \Illuminate\Contracts\Validation\Validator $validator  [description]
    * @return bool
    */
-  public function validate($attribute, $value, $parameters, $validator)
+  public function validate($attribute, $value, $parameters)
   {
     if ($parameters) {
-      $this->loadDictionary($parameters);
+      $this->setDictionary($parameters);
     }
 
     return !$this->isProfane($value);
@@ -52,15 +52,6 @@ class ProfaneValidator
   }
 
   /**
-   * Merge the current dictionary with the passed
-   * @param  array|string $dictionary
-   */
-  public function loadDictionary($dictionary)
-  {
-    $this->badwords = array_merge($this->badwords, $this->readDictionary($dictionary));
-  }
-
-  /**
    * Set the dictionary to use
    * @param array|string $dictionary
    */
@@ -72,7 +63,7 @@ class ProfaneValidator
   protected function readDictionary($dictionary)
   {
     $badwords = [];
-    $baseDictPath = __DIR__ . DIRECTORY_SEPARATOR .'dict/';
+    $baseDictPath = $this->getBaseDictPath();
     if (is_array($dictionary)) {
       foreach ($dictionary as $file) {
         if (file_exists($baseDictPath.$file.'.php')) {
@@ -97,5 +88,10 @@ class ProfaneValidator
     }
 
     return $badwords;
+  }
+
+  protected function getBaseDictPath()
+  {
+    return property_exists($this, 'baseDictPath') ? $this->baseDictPath : __DIR__ . DIRECTORY_SEPARATOR .'dict/';
   }
 }
