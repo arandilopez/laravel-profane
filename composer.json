@@ -8,6 +8,17 @@
             "email": "arandilopez.93@gmail.com"
         }
     ],
+    "autoload": {
+      "psr-4": {
+        "LaravelProfane\\": "src/"
+      }
+    },
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "illuminate/support": "^5.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "mockery/mockery": "^0.9.5"
+    }
 }
