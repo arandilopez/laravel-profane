@@ -26,6 +26,12 @@ return [
 ];
 ```
 
+Publish vendor lang files if you need to replace by your own.
+
+```shell
+php artisan vendor:publish
+```
+
 ## How to use
 
 This package register a custom validator. You can use in your controller's `validate` function.
@@ -46,7 +52,9 @@ class MyController extends Controller
 }
 ```
 
-By default the validator will load the `en` locale. If you want to use others dictionaries you can pass them as parameters in the validator.
+By default the validator will load the default locale in your `config/app.php` file configuration which by default is `en`. If your locale is not supported, please [post an issue for this project](https://github.com/arandilopez/laravel-profane/issues)
+
+If you want to use others dictionaries you can pass them as parameters in the validator.
 
 ```php
 <?php
@@ -64,7 +72,7 @@ class MyController extends Controller
 }
 ```
 
-You can also send as parameter a path of a file which is a dictionary.
+You can also send as parameter a path of a file which is a dictionary in order to replace the default dictionary or **add a new non supported locale**.
 
 ```php
 <?php
@@ -93,6 +101,8 @@ git clone git@github.com:arandilopez/laravel-profane.git
 ```
 
 Pull requests are welcome, but please make sure you provide unit tests to cover your changes.
+
+> Please, help to add more locales
 
 ## License
 This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
