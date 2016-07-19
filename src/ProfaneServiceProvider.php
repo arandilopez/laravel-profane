@@ -6,10 +6,6 @@ use Illuminate\Support\Facades\Validator;
 
 class ProfaneServiceProvider extends ServiceProvider
 {
-  public function register()
-  {
-  }
-
   public function boot()
   {
     $this->loadTranslationsFrom(__DIR__.'/lang', 'laravel-profane');
@@ -23,5 +19,10 @@ class ProfaneServiceProvider extends ServiceProvider
     Validator::replacer('profane', function($message, $attribute, $rule, $parameters) {
         return str_replace(':attribute', $attribute, $message);
     });
+  }
+
+  public function register()
+  {
+    // code...
   }
 }
