@@ -15,7 +15,7 @@ class ProfaneServiceProvider extends ServiceProvider
         __DIR__.'/lang' => resource_path('lang/vendor/laravel-profane'),
     ]);
 
-    Validator::extend('profane', 'LaravelProfane\ProfaneValidator@validate', 'The :attribute contains vulgar content.');
+    Validator::extend('profane', 'LaravelProfane\ProfaneValidator@validate', Lang::get('laravel-profane::validation.profane'));
 
     Validator::replacer('profane', function($message, $attribute, $rule, $parameters) {
         return str_replace(':attribute', $attribute, $message);
