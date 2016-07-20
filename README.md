@@ -1,6 +1,10 @@
 # Laravel Profanity Valitador
 
-[![Latest Stable Version](https://poser.pugx.org/arandilopez/laravel-profane/v/stable)](https://packagist.org/packages/arandilopez/laravel-profane)[![Total Downloads](https://poser.pugx.org/arandilopez/laravel-profane/downloads)](https://packagist.org/packages/arandilopez/laravel-profane)[![License](https://poser.pugx.org/arandilopez/laravel-profane/license)](https://packagist.org/packages/arandilopez/laravel-profane)[![Daily Downloads](https://poser.pugx.org/arandilopez/laravel-profane/d/daily)](https://packagist.org/packages/arandilopez/laravel-profane)[![composer.lock](https://poser.pugx.org/arandilopez/laravel-profane/composerlock)](https://packagist.org/packages/arandilopez/laravel-profane)
+[![Latest Stable Version](https://poser.pugx.org/arandilopez/laravel-profane/v/stable)](https://packagist.org/packages/arandilopez/laravel-profane)
+[![Total Downloads](https://poser.pugx.org/arandilopez/laravel-profane/downloads)](https://packagist.org/packages/arandilopez/laravel-profane)
+[![License](https://poser.pugx.org/arandilopez/laravel-profane/license)](https://packagist.org/packages/arandilopez/laravel-profane)
+[![Daily Downloads](https://poser.pugx.org/arandilopez/laravel-profane/d/daily)](https://packagist.org/packages/arandilopez/laravel-profane)
+[![composer.lock](https://poser.pugx.org/arandilopez/laravel-profane/composerlock)](https://packagist.org/packages/arandilopez/laravel-profane)
 
 I made this package to perform a validation for swear words using Laravel validation service.
 
