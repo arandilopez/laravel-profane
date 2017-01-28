@@ -5,7 +5,7 @@
 [![License](https://poser.pugx.org/arandilopez/laravel-profane/license)](https://packagist.org/packages/arandilopez/laravel-profane)
 [![Daily Downloads](https://poser.pugx.org/arandilopez/laravel-profane/d/daily)](https://packagist.org/packages/arandilopez/laravel-profane)
 [![composer.lock](https://poser.pugx.org/arandilopez/laravel-profane/composerlock)](https://packagist.org/packages/arandilopez/laravel-profane)
-[!](https://travis-ci.org/arandilopez/laravel-profane.svg?branch=master)
+![](https://travis-ci.org/arandilopez/laravel-profane.svg?branch=master)
 
 I made this package to perform a validation for swear words using Laravel validation service.
 
