@@ -66,6 +66,16 @@ class ProfaneValidatorTest extends PHPUnit_Framework_TestCase
     $this->assertTrue($profane->isProfane($word));
   }
 
+  public function test_can_evaluate_as_caseless_mode()
+  {
+      $word = '<b>FUCK</b> you BITCH if you read this.';
+      $this->mockConfigs();
+
+      $profane = new ProfaneValidator();
+
+      $this->assertTrue($profane->isProfane($word));
+  }
+
   public function test_can_set_dictionary_when_you_pass_a_locale()
   {
     $this->mockConfigs();

@@ -43,7 +43,7 @@ class ProfaneValidator
    */
   public function isProfane($text)
   {
-    return str_contains($text, $this->badwords);
+    return Str::containsCaseless($text, $this->badwords);
   }
 
   public function getBadwords()
