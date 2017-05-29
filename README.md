@@ -107,9 +107,7 @@ If you're interesting in contributing code to this project, clone it by running:
 git clone git@github.com:arandilopez/laravel-profane.git
 ```
 
-Pull requests are welcome, but please make sure you provide unit tests to cover your changes.
-
-> Please, help to add more locales
+Pull requests are welcome, but please make sure you provide unit tests to cover your changes. Help to add and support more locales!
 
 ## License
 This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
