@@ -89,7 +89,7 @@ class MyController extends Controller
   public function store(Request $request)
   {
     $this->validate($request, [
-      'username' => 'required|profane:es,en,'.storage('mydicts/fr.php')
+      'username' => 'required|profane:es,en,'.resource_path('lang/fr/dict.php')
     ]);
 
     // ...
