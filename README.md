@@ -59,7 +59,7 @@ class MyController extends Controller
 }
 ```
 
-By default the validator will load the default locale in your `config/app.php` file configuration which by default is `en`. If your locale is not supported, please [post an issue for this project](https://github.com/arandilopez/laravel-profane/issues)
+By default the validator will load the default locale in your `config/app.php` file configuration which by default is `en`. **If your locale is not supported, please [post an issue for this project](https://github.com/arandilopez/laravel-profane/issues)**
 
 If you want to use others dictionaries you can pass them as parameters in the validator.
 
