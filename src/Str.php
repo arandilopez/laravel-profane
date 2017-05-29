@@ -5,13 +5,13 @@ namespace LaravelProfane;
 class Str
 {
     /**
-     * Taken from Illuminate\Support\Str
-     * Determine if a given string contains a given word with case insensitive match.
-     *
-     * @param  string  $haystack
-     * @param  string|array  $needles
-     * @return bool
-     */
+    * Taken from Illuminate\Support\Str
+    * Determine if a given string contains a given word with case insensitive match.
+    *
+    * @param  string  $haystack
+    * @param  string|array  $needles
+    * @return bool
+    */
     public static function containsCaseless($haystack, $needles)
     {
         foreach ((array) $needles as $needle) {
