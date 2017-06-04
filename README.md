@@ -109,5 +109,10 @@ git clone git@github.com:arandilopez/laravel-profane.git
 
 Pull requests are welcome, but please make sure you provide unit tests to cover your changes. Help to add and support more locales!
 
+### Supported Locales
+- English
+- Spanish
+- Italian (provided by @aletundo)
+
 ## License
 This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
