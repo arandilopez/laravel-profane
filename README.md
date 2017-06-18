@@ -7,7 +7,7 @@
 [![composer.lock](https://poser.pugx.org/arandilopez/laravel-profane/composerlock)](https://packagist.org/packages/arandilopez/laravel-profane)
 ![](https://travis-ci.org/arandilopez/laravel-profane.svg?branch=master)
 
-I made this package to perform a validation for swear words using Laravel validation service.
+I made this package to perform a validation for swearwords using Laravel validation service.
 
 ## Instalation
 
@@ -59,7 +59,7 @@ class MyController extends Controller
 }
 ```
 
-By default the validator will load the default locale in your `config/app.php` file configuration which by default is `en`. **If your locale is not supported, please [post an issue for this project](https://github.com/arandilopez/laravel-profane/issues)**
+The validator will load the default locale in your `config/app.php` file configuration which by is `en`. **If your locale is not supported, please [post an issue for this project](https://github.com/arandilopez/laravel-profane/issues)**
 
 If you want to use others dictionaries you can pass them as parameters in the validator.
 
@@ -107,12 +107,12 @@ If you're interesting in contributing code to this project, clone it by running:
 git clone git@github.com:arandilopez/laravel-profane.git
 ```
 
-Pull requests are welcome, but please make sure you provide unit tests to cover your changes. Help to add and support more locales!
+Pull requests are welcome, but please make sure you provide unit tests to cover your changes. **You can help to add and support more locales!**
 
 ### Supported Locales
 - English
 - Spanish
-- Italian (provided by @aletundo)
+- Italian ( provided by @aletundo )
 
 ## License
 This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
