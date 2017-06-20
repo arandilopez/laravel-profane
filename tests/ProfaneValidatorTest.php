@@ -28,8 +28,8 @@ class ProfaneValidatorTest extends PHPUnit_Framework_TestCase
     {
         $this->mockConfigs();
         $attribute = 'description';
-        $text = 'fck you bitch';
-        $parameters = ['es', 'en'];
+        $text = 'fck you bitch. 幹!';
+        $parameters = ['es', 'en' , 'zh-tw'];
 
         $profane = new ProfaneValidator();
 
@@ -117,9 +117,9 @@ class ProfaneValidatorTest extends PHPUnit_Framework_TestCase
         $this->mockConfigs();
 
         $profane = new ProfaneValidator();
-        $profane->setDictionary(['es', 'en']);
+        $profane->setDictionary(['es', 'en', 'it', 'zh-tw']);
 
-        $expected = array_merge(include __DIR__.'/../src/dict/es.php', include __DIR__.'/../src/dict/en.php');
+        $expected = array_merge(include __DIR__.'/../src/dict/es.php', include __DIR__.'/../src/dict/en.php', include __DIR__.'/../src/dict/it.php', include __DIR__.'/../src/dict/zh-tw.php');
 
         $this->assertEquals($profane->getBadwords(), $expected);
     }
