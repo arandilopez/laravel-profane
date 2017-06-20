@@ -124,6 +124,18 @@ class ProfaneValidatorTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($profane->getBadwords(), $expected);
     }
 
+    public function test_can_validate_a_bad_word_with_accent()
+    {
+        $this->mockConfigs();
+
+        $profane = new ProfaneValidator();
+        $profane->setDictionary('sk');
+
+        $word = "piča";
+
+        $this->assertTrue( $profane->isProfane($word) );
+    }
+
     private function mockConfigs()
     {
         Config::shouldReceive('get')
