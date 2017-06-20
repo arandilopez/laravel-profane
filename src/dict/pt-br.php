@@ -1,5 +1,11 @@
 <?php
-
+/*
+  |--------------------------------------------------------------------------
+  | Filter the following list when this language is used.
+  |--------------------------------------------------------------------------
+  | Provided by @ianrodriguesbr
+  |
+  */
 return [
     'aborto',
     'anal',
