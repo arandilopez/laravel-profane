@@ -115,6 +115,7 @@ Pull requests are welcome, but please make sure you provide unit tests to cover 
 - Italian ( provided by @aletundo )
 - Traditional Chinese ( provided by @Nationalcat )
 - Slovak ( provided by @kotass )
+- Dutch (Netherlands) ( provided by @Cannonb4ll )
 
 ## License
 This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
