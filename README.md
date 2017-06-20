@@ -114,6 +114,7 @@ Pull requests are welcome, but please make sure you provide unit tests to cover 
 - Spanish
 - Italian ( provided by @aletundo )
 - Brazilian Portuguese ( provided by @ianrodriguesbr )
+- Traditional Chinese ( provided by @Nationalcat )
 
 ## License
 This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
