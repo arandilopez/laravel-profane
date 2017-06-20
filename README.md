@@ -113,6 +113,7 @@ Pull requests are welcome, but please make sure you provide unit tests to cover 
 - English
 - Spanish
 - Italian ( provided by @aletundo )
+- Brazilian Portuguese ( provided by @ianrodriguesbr )
 - Traditional Chinese ( provided by @Nationalcat )
 - Slovak ( provided by @kotass )
 - Dutch (Netherlands) ( provided by @Cannonb4ll )
