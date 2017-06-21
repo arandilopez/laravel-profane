@@ -125,6 +125,30 @@ class ProfaneValidatorTest extends PHPUnit_Framework_TestCase
         $this->assertTrue( $profane->isProfane($word) );
     }
 
+    public function test_can_validate_a_word_in_greek()
+    {
+        $this->mockConfigs();
+
+        $profane = new ProfaneValidator();
+        $profane->setDictionary('gr');
+
+        $word = "μαλάκας";
+
+        $this->assertTrue($profane->isProfane($word));
+    }
+
+    public function test_can_validate_a_text_in_greek()
+    {
+        $this->mockConfigs();
+        $attribute = 'description';
+        $text = 'εισαι πουτανα';
+        $parameters = ['en' , 'gr'];
+
+        $profane = new ProfaneValidator();
+
+        $this->assertFalse($profane->validate($attribute, $text, $parameters));
+    }
+
     private function mockConfigs()
     {
         Config::shouldReceive('get')
