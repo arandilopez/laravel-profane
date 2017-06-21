@@ -34,6 +34,7 @@ return [
     'sex',
     'shit',
     'slut',
+    'sucker',
     'titties',
     'twat',
     'vagina',
