@@ -1,8 +1,11 @@
 <?php
 
+namespace LaravelProfaneTests;
+
+use LaravelProfaneTests\TestCase;
 use LaravelProfane\Str;
 
-class StrTest extends PHPUnit_Framework_TestCase
+class StrTest extends TestCase
 {
     public function test_remove_accents_in_spanish_text()
     {
