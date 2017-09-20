@@ -1,22 +1,12 @@
 <?php
 
+namespace LaravelProfaneTests;
+
+use LaravelProfaneTests\TestCase;
 use LaravelProfane\ProfaneValidator;
-use Illuminate\Support\Facades\Config;
-use \Mockery as m;
 
-class ProfaneValidatorTest extends PHPUnit_Framework_TestCase
+class ProfaneValidatorTest extends TestCase
 {
-    public function setUp()
-    {
-        parent::setUp();
-        $this->mockConfigs();
-    }
-    public function tearDown()
-    {
-        parent::tearDown();
-        m::close();
-    }
-
     public function test_can_validate_a_word_with_numbers()
     {
         $attribute = 'username';
@@ -147,18 +137,5 @@ class ProfaneValidatorTest extends PHPUnit_Framework_TestCase
         $profane = new ProfaneValidator();
 
         $this->assertFalse($profane->validate($attribute, $text, $parameters));
-    }
-
-    private function mockConfigs()
-    {
-        Config::shouldReceive('get')
-        ->once()
-        ->with('app.locale')
-        ->andReturn('en');
-
-        Config::shouldReceive('has')
-        ->once()
-        ->with('app.locale')
-        ->andReturn(true);
     }
 }

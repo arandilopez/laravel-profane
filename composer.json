@@ -10,7 +10,8 @@
   ],
   "autoload": {
     "psr-4": {
-      "LaravelProfane\\": "src/"
+      "LaravelProfane\\": "src/",
+      "LaravelProfaneTests\\": "tests/"
     }
   },
   "minimum-stability": "stable",
