@@ -23,6 +23,11 @@ class Str
         return false;
     }
 
+    /**
+     * Remove accents or special characters from a string.
+     * @param  string $string
+     * @return string
+     */
     public static function removeAccent($string)
     {
         $replace = [
