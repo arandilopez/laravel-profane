@@ -22,14 +22,14 @@ Add the `ProfaneServiceProvider` class in your `config/app.php` file.
 ```php
 <?php
 return [
-  // ...
-
-  'providers' => [
     // ...
-    LaravelProfane\ProfaneServiceProvider::class,
-  ];
 
-  // ...
+    'providers' => [
+        // ...
+        LaravelProfane\ProfaneServiceProvider::class,
+    ];
+
+    // ...
 ];
 ```
 
@@ -48,14 +48,14 @@ This package register a custom validator. You can use in your controller's `vali
 // ...
 class MyController extends Controller
 {
-  public function store(Request $request)
-  {
-    $this->validate($request, [
-      'username' => 'required|profane'
-    ]);
+    public function store(Request $request)
+    {
+        $this->validate($request, [
+            'username' => 'required|profane'
+        ]);
 
-    // ...
-  }
+        // ...
+    }
 }
 ```
 
@@ -68,14 +68,14 @@ If you want to use others dictionaries you can pass them as parameters in the va
 // ...
 class MyController extends Controller
 {
-  public function store(Request $request)
-  {
-    $this->validate($request, [
-      'username' => 'required|profane:es,en'
-    ]);
+    public function store(Request $request)
+    {
+        $this->validate($request, [
+            'username' => 'required|profane:es,en'
+        ]);
 
-    // ...
-  }
+        // ...
+    }
 }
 ```
 
@@ -86,14 +86,14 @@ You can also send as parameter a path of a file which is a dictionary in order t
 // ...
 class MyController extends Controller
 {
-  public function store(Request $request)
-  {
-    $this->validate($request, [
-      'username' => 'required|profane:es,en,'.resource_path('lang/fr/dict.php')
-    ]);
+    public function store(Request $request)
+    {
+        $this->validate($request, [
+            'username' => 'required|profane:es,en,'.resource_path('lang/fr/dict.php')
+        ]);
 
-    // ...
-  }
+        // ...
+    }
 }
 ```
 
