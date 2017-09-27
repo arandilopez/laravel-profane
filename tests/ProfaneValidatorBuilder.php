@@ -32,9 +32,9 @@ class ProfaneValidatorBuilder
      */
     public function validate(array $parameters)
     {
-        list($attribute, $text, $parameters) = $parameters;
+        list($attribute, $text, $dictionaries) = $parameters;
 
-        return $this->build()->validate($attribute, $text, $parameters);
+        return $this->build()->validate($attribute, $text, $dictionaries);
     }
 
     /**
