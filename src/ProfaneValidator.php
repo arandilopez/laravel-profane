@@ -7,9 +7,15 @@ use Illuminate\Contracts\Validation\Validator;
 
 class ProfaneValidator
 {
-
+    /**
+     * [$badwords description]
+     * @var array
+     */
     protected $badwords = [];
 
+    /**
+     * [__construct description]
+     */
     function __construct()
     {
         // Get default locale string in laravel project
@@ -49,6 +55,10 @@ class ProfaneValidator
         );
     }
 
+    /**
+     * [getBadwords description]
+     * @return [type] [description]
+     */
     public function getBadwords()
     {
         return $this->badwords;
@@ -63,6 +73,11 @@ class ProfaneValidator
         $this->badwords = $this->readDictionary($dictionary);
     }
 
+    /**
+     * [readDictionary description]
+     * @param  [type] $dictionary [description]
+     * @return [type]             [description]
+     */
     protected function readDictionary($dictionary)
     {
         $badwords = [];
@@ -95,6 +110,10 @@ class ProfaneValidator
         return $badwords;
     }
 
+    /**
+     * [getBaseDictPath description]
+     * @return [type] [description]
+     */
     protected function getBaseDictPath()
     {
         return property_exists($this, 'baseDictPath') ? $this->baseDictPath : __DIR__ . DIRECTORY_SEPARATOR .'dict/';
