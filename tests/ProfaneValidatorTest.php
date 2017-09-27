@@ -4,7 +4,7 @@ namespace LaravelProfaneTests;
 
 use LaravelProfane\ProfaneValidator;
 use LaravelProfaneTests\TestCase;
-use LaravelProfaneTests\ProfaneValidatorBuilder;
+use LaravelProfaneTests\Support\ProfaneValidatorBuilder;
 
 class ProfaneValidatorTest extends TestCase
 {

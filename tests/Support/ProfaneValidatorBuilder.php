@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelProfaneTests;
+namespace LaravelProfaneTests\Support;
 
 use LaravelProfane\ProfaneValidator;
 
