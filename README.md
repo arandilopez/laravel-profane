@@ -109,15 +109,17 @@ git clone git@github.com:arandilopez/laravel-profane.git
 
 Pull requests are welcome, but please make sure you provide unit tests to cover your changes. **You can help to add and support more locales!**
 
+*Thanks to [@dorianneto](https://github.com/dorianneto) for his contributions.*
+
 ### Supported Locales
 - English
 - Spanish
-- Italian ( provided by @aletundo )
-- Brazilian Portuguese ( provided by @ianrodriguesbr )
-- Traditional Chinese ( provided by @Nationalcat )
-- Slovak ( provided by @kotass )
-- Dutch (Netherlands) ( provided by @Cannonb4ll )
-- Greek ( provided by @siokas )
+- Italian ( provided by [@aletundo](https://github.com/aletundo) )
+- Brazilian Portuguese ( provided by [@ianrodriguesbr](https://github.com/ianrodriguesbr) )
+- Traditional Chinese ( provided by [@Nationalcat](https://github.com/Nationalcat) )
+- Slovak ( provided by [@kotass](https://github.com/kotass) )
+- Dutch (Netherlands) ( provided by [@Cannonb4ll](https://github.com/Cannonb4ll) )
+- Greek ( provided by [@siokas](https://github.com/siokas) )
 
 ## License
 This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
