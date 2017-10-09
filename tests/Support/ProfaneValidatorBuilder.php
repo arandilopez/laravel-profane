@@ -3,6 +3,7 @@
 namespace LaravelProfaneTests\Support;
 
 use LaravelProfane\ProfaneValidator;
+use LaravelProfane\Dictionary;
 
 class ProfaneValidatorBuilder
 {
@@ -18,11 +19,7 @@ class ProfaneValidatorBuilder
      */
     public function __construct($dictionary = null)
     {
-        $this->profaneValidator = new ProfaneValidator;
-
-        if ($dictionary) {
-            $this->profaneValidator->setDictionary($dictionary);
-        }
+        $this->profaneValidator = new ProfaneValidator(new Dictionary($dictionary));
     }
 
     /**
