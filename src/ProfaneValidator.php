@@ -2,11 +2,17 @@
 
 namespace LaravelProfane;
 
-use Illuminate\Support\Facades\Config;
+use LaravelProfane\Dictionary;
 use Illuminate\Contracts\Validation\Validator;
 
 class ProfaneValidator
 {
+    /**
+     * [$dictionary description]
+     * @var [type]
+     */
+    protected $dictionary;
+
     /**
      * [$badwords description]
      * @var array
@@ -15,14 +21,12 @@ class ProfaneValidator
 
     /**
      * [__construct description]
+     * @param Dictionary $dictionary [description]
      */
-    function __construct()
+    function __construct(Dictionary $dictionary)
     {
-        // Get default locale string in laravel project
-        // and set it as default dictionary
-        $locale_dict = Config::has('app.locale') ? Config::get('app.locale') : 'en';
-
-        $this->setDictionary($locale_dict);
+        $this->dictionary = $dictionary;
+        $this->badwords   = $dictionary->getDictionary();
     }
 
     /**
@@ -36,7 +40,8 @@ class ProfaneValidator
     public function validate($attribute, $value, $parameters)
     {
         if ($parameters) {
-            $this->setDictionary($parameters);
+            $this->dictionary->setDictionary($parameters);
+            $this->badwords = $this->dictionary->getDictionary();
         }
 
         return !$this->isProfane($value);
@@ -53,69 +58,5 @@ class ProfaneValidator
             Str::removeAccent($text),
             $this->badwords
         );
-    }
-
-    /**
-     * [getBadwords description]
-     * @return [type] [description]
-     */
-    public function getBadwords()
-    {
-        return $this->badwords;
-    }
-
-    /**
-    * Set the dictionary to use
-    * @param array|string $dictionary
-    */
-    public function setDictionary($dictionary)
-    {
-        $this->badwords = $this->readDictionary($dictionary);
-    }
-
-    /**
-     * [readDictionary description]
-     * @param  [type] $dictionary [description]
-     * @return [type]             [description]
-     */
-    protected function readDictionary($dictionary)
-    {
-        $badwords = [];
-        $baseDictPath = $this->getBaseDictPath();
-        if (is_array($dictionary)) {
-            foreach ($dictionary as $file) {
-                if (file_exists($baseDictPath.$file.'.php')) {
-                    $dict = include($baseDictPath.$file.'.php');
-                    $badwords = array_merge($badwords, $dict);
-                } else {
-                    // if the file isn't in the dict directory,
-                    // it's probably a custom user library
-                    $dict = include($file);
-                    $badwords = array_merge($badwords, $dict);
-                }
-            }
-            // just a single string, not an array
-        } elseif (is_string($dictionary)) {
-            if (file_exists($baseDictPath.$dictionary.'.php')) {
-                $dict = include($baseDictPath.$dictionary.'.php');
-                $badwords = array_merge($badwords, $dict);
-            } else {
-                if (file_exists($dictionary)) {
-                    $dict = include($dictionary);
-                    $badwords = array_merge($badwords, $dict);
-                }  // else nothing is merged
-            }
-        }
-
-        return $badwords;
-    }
-
-    /**
-     * [getBaseDictPath description]
-     * @return [type] [description]
-     */
-    protected function getBaseDictPath()
-    {
-        return property_exists($this, 'baseDictPath') ? $this->baseDictPath : __DIR__ . DIRECTORY_SEPARATOR .'dict/';
     }
 }

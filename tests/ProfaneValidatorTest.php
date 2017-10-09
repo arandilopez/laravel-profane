@@ -8,53 +8,6 @@ use LaravelProfaneTests\Support\ProfaneValidatorBuilder;
 
 class ProfaneValidatorTest extends TestCase
 {
-    public function test_can_set_dictionary_when_you_pass_a_locale()
-    {
-        $builder = new ProfaneValidatorBuilder('es');
-
-        $expected = include __DIR__.'/../src/dict/es.php';
-
-        $this->assertEquals($builder->build()->getBadwords(), $expected);
-    }
-
-    public function test_can_set_dictionary_when_you_pass_a_file()
-    {
-        $builder = new ProfaneValidatorBuilder(__DIR__.'/../src/dict/es.php');
-
-        $expected = include __DIR__.'/../src/dict/es.php';
-
-        $this->assertEquals($builder->build()->getBadwords(), $expected);
-    }
-
-    public function test_can_set_dictionary_when_you_pass_an_array_of_files()
-    {
-        $builder = new ProfaneValidatorBuilder([
-            __DIR__.'/../src/dict/es.php',
-            __DIR__.'/../src/dict/en.php'
-        ]);
-
-        $expected = array_merge(
-            include __DIR__.'/../src/dict/es.php',
-            include __DIR__.'/../src/dict/en.php'
-        );
-
-        $this->assertEquals($builder->build()->getBadwords(), $expected);
-    }
-
-    public function test_can_set_dictionary_when_you_pass_an_array_of_locales()
-    {
-        $builder = new ProfaneValidatorBuilder(['es', 'en', 'it', 'zh-tw']);
-
-        $expected = array_merge(
-            include __DIR__.'/../src/dict/es.php',
-            include __DIR__.'/../src/dict/en.php',
-            include __DIR__.'/../src/dict/it.php',
-            include __DIR__.'/../src/dict/zh-tw.php'
-        );
-
-        $this->assertEquals($builder->build()->getBadwords(), $expected);
-    }
-
     public function test_can_validate_a_word_with_numbers()
     {
         $builder = new ProfaneValidatorBuilder();
