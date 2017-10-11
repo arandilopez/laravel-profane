@@ -20,10 +20,10 @@ return [
   'assatanato',
   'bagascia',
   'bagassa',
-  'bagnarsi',
+  
   'baldracca',
   'balle',
-  'battere',
+  
   'battona',
   'belino',
   'biga',
@@ -36,19 +36,19 @@ return [
   'brinca',
   'bucaiolo',
   'budiùlo',
-  'buona donna',
+   
   'busone',
   'cacca',
   'caccati in mano e prenditi a schiaffi',
   'caciocappella',
-  'cadavere',
+   
   'cagare',
   'cagata',
   'cagna',
-  'cammello',
+   
   'cappella',
-  'carciofo',
-  'carità',
+   
+   
   'casci',
   'cazzata',
   'cazzi',
@@ -63,7 +63,7 @@ return [
   'coglione',
   'coglioni',
   'cornuto',
-  'cozza',
+   
   'culattina',
   'culattone',
   'culo',
@@ -72,17 +72,17 @@ return [
   'dio cane',
   'dio porco',
   'ditalino',
-  'duro',
+   
   'fanculo',
-  'fare unaŠ',
-  'fava',
-  'femminuccia',
+   
+   
+   
   'fica',
   'figa',
   'figlio di buona donna',
   'figlio di puttana',
   'figone',
-  'finocchio',
+   
   'fottere',
   'fottersi',
   'fracicone',
@@ -91,21 +91,20 @@ return [
   'froscio',
   'fuori come un balcone',
   'goldone',
-  'grilletto',
-  'guanto',
+   
+   
   'guardone',
   'incazzarsi',
   'incoglionirsi',
   'inculare',
-  'ingoio',
-  "l'arte bolognese",
+   
+   
   'leccaculo',
   'lecchino',
   'lofare',
   'loffa',
   'loffare',
-  'lumaca',
-  'manico',
+   
   'mannaggia',
   'merda',
   'merdata',
@@ -114,10 +113,9 @@ return [
   'minchia',
   'minchione',
   'mona',
-  'monta',
-  'montare',
+   
   'mussa',
-  'nave scuola',
+   
   'nerchia',
   'nudo',
   'padulo',
@@ -126,7 +124,7 @@ return [
   'patacca',
   'patonza',
   'pecorina',
-  'pesce',
+   
   'picio',
   'pincare',
   'pipa',
@@ -154,14 +152,14 @@ return [
   'puttana',
   'quaglia',
   'recchione',
-  'regina',
+   
   'ricchione',
   'rincoglionire',
   'rizzarsi',
   'rompiballe',
   'rottinculo',
   'ruffiano',
-  'sbattere',
+   
   'sbattersi',
   'sborra',
   'sborrata',
@@ -178,7 +176,7 @@ return [
   'soccia',
   'socmel',
   'sorca',
-  'spagnola',
+   
   'spompinare',
   'sticchio',
   'stronza',
@@ -191,18 +189,18 @@ return [
   'terrone',
   'testa di cazzo',
   'tette',
-  'tirare',
+   
   'topa',
   'troia',
   'troietta',
   'troiona',
   'troione',
   'trombare',
-  'uccello',
+   
   'vacca',
   'vaffanculo',
-  'vangare',
-  'venire',
+   
+   
   'zinne',
   'zio cantante',
   'zoccola',
