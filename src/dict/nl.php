@@ -41,5 +41,5 @@ return [
     'tering',
     'trut',
     'tyfus',
-    'verdomme'
+    'verdomme',
 ];

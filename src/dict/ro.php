@@ -109,5 +109,5 @@ return [
     'martolog',
     'panarama',
     'pisa-m-as',
-    'pisamas'
+    'pisamas',
 ];

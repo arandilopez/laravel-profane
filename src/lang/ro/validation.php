@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'profane' => ':attribute are un continut vulgar'
+    'profane' => ':attribute are un continut vulgar',
 ];
