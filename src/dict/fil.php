@@ -16,7 +16,7 @@ return [
     'punyeta',
     'hinayupak',
     'pucha',
-    'pakshet'
+    'pakshet',
     'tae',
     'hayop',
     'tanga',
