@@ -115,14 +115,19 @@ Pull requests are welcome, but please make sure you provide unit tests to cover 
 *Thanks to [@dorianneto](https://github.com/dorianneto) for his contributions.*
 
 ### Supported Locales
-- English
-- Spanish
+- English ( provided by [@arandilopez](https://github.com/arandilopez) )
+- Spanish ( provided by [@arandilopez](https://github.com/arandilopez) and [@xDidier901](https://github.com/xDidier901))
 - Italian ( provided by [@aletundo](https://github.com/aletundo) )
 - Brazilian Portuguese ( provided by [@ianrodriguesbr](https://github.com/ianrodriguesbr) )
 - Traditional Chinese ( provided by [@Nationalcat](https://github.com/Nationalcat) )
 - Slovak ( provided by [@kotass](https://github.com/kotass) )
-- Dutch (Netherlands) ( provided by [@Cannonb4ll](https://github.com/Cannonb4ll) )
+- Dutch (Netherlands) ( provided by [@Cannonb4ll](https://github.com/Cannonb4ll) and [@WouterVanmulken](https://github.com/WouterVanmulken))
 - Greek ( provided by [@siokas](https://github.com/siokas) )
+- Malayalam ( provided by [@abinodh](https://github.com/abinodh) )
+- Russian ( provided by [@alex2sat](https://github.com/alex2sat) )
+- Serbian ( provided by [@Djuki](https://github.com/Djuki) )
+- Filipino ( provided by [@credocleo](https://github.com/credocleo) )
+- Romanian ( provided by [@rchioreanu](https://github.com/rchioreanu) )
 
 ## License
 This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
