@@ -6,6 +6,7 @@
 [![Daily Downloads](https://poser.pugx.org/arandilopez/laravel-profane/d/daily)](https://packagist.org/packages/arandilopez/laravel-profane)
 [![composer.lock](https://poser.pugx.org/arandilopez/laravel-profane/composerlock)](https://packagist.org/packages/arandilopez/laravel-profane)
 ![](https://travis-ci.org/arandilopez/laravel-profane.svg?branch=master)
+[![StyleCI](https://styleci.io/repos/63648834/shield?branch=master)](https://styleci.io/repos/63648834)
 
 I made this package to perform a validation for swearwords using Laravel validation service.
 
