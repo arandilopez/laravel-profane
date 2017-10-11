@@ -20,10 +20,8 @@ return [
   'assatanato',
   'bagascia',
   'bagassa',
-  
   'baldracca',
   'balle',
-  
   'battona',
   'belino',
   'biga',
@@ -36,19 +34,14 @@ return [
   'brinca',
   'bucaiolo',
   'budiùlo',
-   
   'busone',
   'cacca',
   'caccati in mano e prenditi a schiaffi',
   'caciocappella',
-   
   'cagare',
   'cagata',
   'cagna',
-   
   'cappella',
-   
-   
   'casci',
   'cazzata',
   'cazzi',
@@ -63,7 +56,6 @@ return [
   'coglione',
   'coglioni',
   'cornuto',
-   
   'culattina',
   'culattone',
   'culo',
@@ -71,18 +63,13 @@ return [
   'dio bestia',
   'dio cane',
   'dio porco',
-  'ditalino',
-   
+  'ditalino',  
   'fanculo',
-   
-   
-   
   'fica',
   'figa',
   'figlio di buona donna',
   'figlio di puttana',
-  'figone',
-   
+  'figone',  
   'fottere',
   'fottersi',
   'fracicone',
@@ -90,21 +77,16 @@ return [
   'frocio',
   'froscio',
   'fuori come un balcone',
-  'goldone',
-   
-   
+  'goldone',  
   'guardone',
   'incazzarsi',
   'incoglionirsi',
-  'inculare',
-   
-   
+  'inculare', 
   'leccaculo',
   'lecchino',
   'lofare',
   'loffa',
-  'loffare',
-   
+  'loffare',   
   'mannaggia',
   'merda',
   'merdata',
@@ -113,21 +95,15 @@ return [
   'minchia',
   'minchione',
   'mona',
-   
   'mussa',
-   
   'nerchia',
-  'nudo',
   'padulo',
   'palle',
   'palloso',
-  'patacca',
   'patonza',
   'pecorina',
-   
   'picio',
   'pincare',
-  'pipa',
   'pippone',
   'pipì',
   'pirla',
@@ -150,16 +126,13 @@ return [
   'potta',
   'puppami',
   'puttana',
-  'quaglia',
   'recchione',
-   
   'ricchione',
   'rincoglionire',
   'rizzarsi',
   'rompiballe',
   'rottinculo',
   'ruffiano',
-   
   'sbattersi',
   'sborra',
   'sborrata',
@@ -176,7 +149,6 @@ return [
   'soccia',
   'socmel',
   'sorca',
-   
   'spompinare',
   'sticchio',
   'stronza',
@@ -189,18 +161,14 @@ return [
   'terrone',
   'testa di cazzo',
   'tette',
-   
   'topa',
   'troia',
   'troietta',
   'troiona',
   'troione',
   'trombare',
-   
   'vacca',
-  'vaffanculo',
-   
-   
+  'vaffanculo', 
   'zinne',
   'zio cantante',
   'zoccola',
