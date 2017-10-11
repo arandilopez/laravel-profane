@@ -3,7 +3,6 @@
 namespace LaravelProfaneTests;
 
 use LaravelProfane\Dictionary;
-use LaravelProfaneTests\TestCase;
 
 class DictionaryTest extends TestCase
 {
@@ -29,7 +28,7 @@ class DictionaryTest extends TestCase
     {
         $dictionary = new Dictionary([
             'es',
-            'gr'
+            'gr',
         ]);
 
         $expected = array_merge(

@@ -1,9 +1,10 @@
 <?php
 
 namespace LaravelProfane;
-use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Validator;
+
 use Illuminate\Support\Facades\Lang;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\ServiceProvider;
 
 class ProfaneServiceProvider extends ServiceProvider
 {
@@ -17,7 +18,7 @@ class ProfaneServiceProvider extends ServiceProvider
 
         Validator::extend('profane', 'LaravelProfane\ProfaneValidator@validate', Lang::get('laravel-profane::validation.profane'));
 
-        Validator::replacer('profane', function($message, $attribute, $rule, $parameters) {
+        Validator::replacer('profane', function ($message, $attribute, $rule, $parameters) {
             return str_replace(':attribute', $attribute, $message);
         });
     }

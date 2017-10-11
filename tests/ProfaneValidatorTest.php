@@ -2,8 +2,6 @@
 
 namespace LaravelProfaneTests;
 
-use LaravelProfane\ProfaneValidator;
-use LaravelProfaneTests\TestCase;
 use LaravelProfaneTests\Support\ProfaneValidatorBuilder;
 
 class ProfaneValidatorTest extends TestCase
@@ -19,7 +17,7 @@ class ProfaneValidatorTest extends TestCase
     {
         $builder = new ProfaneValidatorBuilder();
 
-        $this->assertFalse($builder->validate(['description', 'fck you bitch. 幹!', ['es', 'en' , 'zh-tw']]));
+        $this->assertFalse($builder->validate(['description', 'fck you bitch. 幹!', ['es', 'en', 'zh-tw']]));
     }
 
     public function test_can_evaluate_profanity_of_a_word()
@@ -73,7 +71,7 @@ class ProfaneValidatorTest extends TestCase
     {
         $builder = new ProfaneValidatorBuilder('sk');
 
-        $word = "piča";
+        $word = 'piča';
 
         $this->assertTrue($builder->build()->isProfane($word));
     }
@@ -83,7 +81,7 @@ class ProfaneValidatorTest extends TestCase
         $builder = new ProfaneValidatorBuilder('es');
 
         // in spanish coño =! cono
-        $word = "coño";
+        $word = 'coño';
 
         $this->assertTrue($builder->build()->isProfane($word));
     }
@@ -94,7 +92,7 @@ class ProfaneValidatorTest extends TestCase
 
         $builder = new ProfaneValidatorBuilder('gr');
 
-        $word = "μαλάκας";
+        $word = 'μαλάκας';
 
         $this->assertTrue($builder->build()->isProfane($word));
     }
@@ -105,6 +103,6 @@ class ProfaneValidatorTest extends TestCase
 
         $builder = new ProfaneValidatorBuilder();
 
-        $this->assertFalse($builder->validate(['description', 'εισαι πουτανα', ['en' , 'gr']]));
+        $this->assertFalse($builder->validate(['description', 'εισαι πουτανα', ['en', 'gr']]));
     }
 }

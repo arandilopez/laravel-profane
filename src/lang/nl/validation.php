@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'profane' => 'Het :attribute veld bevat vulgaire inhoud'
+    'profane' => 'Het :attribute veld bevat vulgaire inhoud',
 ];

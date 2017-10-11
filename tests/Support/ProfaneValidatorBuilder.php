@@ -2,19 +2,21 @@
 
 namespace LaravelProfaneTests\Support;
 
-use LaravelProfane\ProfaneValidator;
 use LaravelProfane\Dictionary;
+use LaravelProfane\ProfaneValidator;
 
 class ProfaneValidatorBuilder
 {
     /**
-     * [$profaneValidator description]
+     * [$profaneValidator description].
+     *
      * @var [type]
      */
     protected $profaneValidator;
 
     /**
-     * [__construct description]
+     * [__construct description].
+     *
      * @param [type] $dictionary [description]
      */
     public function __construct($dictionary = null)
@@ -23,9 +25,11 @@ class ProfaneValidatorBuilder
     }
 
     /**
-     * [validate description]
-     * @param  array  $parameters [description]
-     * @return [type]             [description]
+     * [validate description].
+     *
+     * @param array $parameters [description]
+     *
+     * @return [type] [description]
      */
     public function validate(array $parameters)
     {
@@ -35,7 +39,8 @@ class ProfaneValidatorBuilder
     }
 
     /**
-     * [build description]
+     * [build description].
+     *
      * @return LaravelProfane\ProfaneValidator
      */
     public function build()
