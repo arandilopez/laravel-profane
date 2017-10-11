@@ -53,5 +53,5 @@ return [
     'reiten',
     'Schamlippen',
     'Hodensack',
-    'arschlecken'
+    'arschlecken',
 ];
