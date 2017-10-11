@@ -2,7 +2,6 @@
 
 namespace LaravelProfaneTests;
 
-use LaravelProfaneTests\TestCase;
 use LaravelProfane\Str;
 
 class StrTest extends TestCase
