@@ -23,5 +23,5 @@ return [
     'pokpok',
     'hipon',
     'engot',
-    'bruha'
+    'bruha',
 ];
