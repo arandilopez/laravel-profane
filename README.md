@@ -9,7 +9,7 @@
 
 I made this package to perform a validation for swearwords using Laravel validation service.
 
-## Instalation
+## Installation
 
 Install via composer
 ```shell
@@ -39,7 +39,7 @@ Publish vendor lang files if you need to replace by your own.
 php artisan vendor:publish
 ```
 
-## How to use
+## Usage
 
 This package register a custom validator. You can use in your controller's `validate` function.
 
@@ -106,6 +106,8 @@ If you're interesting in contributing code to this project, clone it by running:
 ```shell
 git clone git@github.com:arandilopez/laravel-profane.git
 ```
+
+Please read the [CONTRIBUTING](CONTRIBUTING.md) file.
 
 Pull requests are welcome, but please make sure you provide unit tests to cover your changes. **You can help to add and support more locales!**
 
