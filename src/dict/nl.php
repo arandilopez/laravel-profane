@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Filter the following list when this language is used.
@@ -9,28 +8,38 @@ return [
     | Provided by @Cannonb4ll
     |
     */
-
-    'kanker',
-    'godverdomme',
-    'tering',
-    'verdomme',
-    'tyfus',
-    'ebola',
-    'flikker',
     'anaal',
-    'trut',
-    'hoer',
-    'slet',
-    'homo',
-    'kringspiermusketier',
     'debiel',
-    'mongool',
-    'mogool',
+    'ebola',
+    'eikel',
+    'flikker',
+    'geitenneuker',
+    'godverdomme',
+    'hufter',
+    'hoer',
+    'homo',
+    'kanker',
     'kelerelijer',
     'klerelijer',
-    'rotmof',
-    'geitenneuker',
-    'pedo',
-    'randdebiel',
+    'klojo',
+    'klootviool',
+    'kloothommel',
+    'klote',
+    'kreng',
+    'kringspiermusketier',
+    'kut',
     'lul',
+    'mogool',
+    'mongool',
+    'mietje',
+    'pedo',
+    'pleurislijder',
+    'pleurislijer',
+    'randdebiel',
+    'rotmof',
+    'slet',
+    'tering',
+    'trut',
+    'tyfus',
+    'verdomme'
 ];
