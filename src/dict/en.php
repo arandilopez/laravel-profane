@@ -77,5 +77,5 @@ return [
     'taint',
     'titty',
     'vag',
-    'whore'
+    'whore',
 ];

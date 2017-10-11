@@ -32,5 +32,5 @@ return [
     'geitenneuker',
     'pedo',
     'randdebiel',
-    'lul'
+    'lul',
 ];

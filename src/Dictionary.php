@@ -7,16 +7,18 @@ use Illuminate\Support\Facades\Config;
 class Dictionary
 {
     /**
-     * [$dictionary description]
+     * [$dictionary description].
+     *
      * @var [type]
      */
     private $dictionary;
 
     /**
-     * [__construct description]
+     * [__construct description].
+     *
      * @param [type] $dictionary [description]
      */
-    function __construct($dictionary = null)
+    public function __construct($dictionary = null)
     {
         // Get default locale string in laravel project
         // and set it as default dictionary
@@ -26,7 +28,8 @@ class Dictionary
     }
 
     /**
-     * [getDictionary description]
+     * [getDictionary description].
+     *
      * @return [type] [description]
      */
     public function getDictionary()
@@ -35,18 +38,21 @@ class Dictionary
     }
 
     /**
-    * Set the dictionary to use
-    * @param array|string $dictionary
-    */
+     * Set the dictionary to use.
+     *
+     * @param array|string $dictionary
+     */
     public function setDictionary($dictionary)
     {
         $this->dictionary = $this->readDictionary($dictionary);
     }
 
     /**
-     * [readDictionary description]
-     * @param  [type] $dictionary [description]
-     * @return [type]             [description]
+     * [readDictionary description].
+     *
+     * @param [type] $dictionary [description]
+     *
+     * @return [type] [description]
      */
     protected function readDictionary($dictionary)
     {
@@ -55,23 +61,23 @@ class Dictionary
         if (is_array($dictionary)) {
             foreach ($dictionary as $file) {
                 if (file_exists($baseDictPath.$file.'.php')) {
-                    $dict = include($baseDictPath.$file.'.php');
+                    $dict = include $baseDictPath.$file.'.php';
                     $words = array_merge($words, $dict);
                 } else {
                     // if the file isn't in the dict directory,
                     // it's probably a custom user library
-                    $dict = include($file);
+                    $dict = include $file;
                     $words = array_merge($words, $dict);
                 }
             }
             // just a single string, not an array
         } elseif (is_string($dictionary)) {
             if (file_exists($baseDictPath.$dictionary.'.php')) {
-                $dict = include($baseDictPath.$dictionary.'.php');
+                $dict = include $baseDictPath.$dictionary.'.php';
                 $words = array_merge($words, $dict);
             } else {
                 if (file_exists($dictionary)) {
-                    $dict = include($dictionary);
+                    $dict = include $dictionary;
                     $words = array_merge($words, $dict);
                 }  // else nothing is merged
             }
@@ -81,11 +87,12 @@ class Dictionary
     }
 
     /**
-     * [getBaseDictPath description]
+     * [getBaseDictPath description].
+     *
      * @return [type] [description]
      */
     protected function getBaseDictPath()
     {
-        return property_exists($this, 'baseDictPath') ? $this->baseDictPath : __DIR__ . DIRECTORY_SEPARATOR .'dict/';
+        return property_exists($this, 'baseDictPath') ? $this->baseDictPath : __DIR__.DIRECTORY_SEPARATOR.'dict/';
     }
 }

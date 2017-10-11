@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'profane' => ':attribute obsahuje vulgárny obsah'
+    'profane' => ':attribute obsahuje vulgárny obsah',
 ];

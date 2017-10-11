@@ -3,13 +3,13 @@
 namespace LaravelProfaneTests;
 
 use Illuminate\Support\Facades\Config;
+use Mockery;
 use PHPUnit_Framework_TestCase;
-use \Mockery;
 
 class TestCase extends PHPUnit_Framework_TestCase
 {
     /**
-     * [setUp description]
+     * [setUp description].
      */
     public function setUp()
     {
@@ -18,7 +18,8 @@ class TestCase extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * [tearDown description]
+     * [tearDown description].
+     *
      * @return [type] [description]
      */
     public function tearDown()
@@ -28,7 +29,8 @@ class TestCase extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * [mockConfigs description]
+     * [mockConfigs description].
+     *
      * @return void
      */
     protected function mockConfigs()
