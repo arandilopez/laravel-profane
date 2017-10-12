@@ -3,7 +3,7 @@
 /**
  * List of common swear words in Indonesian, sorted alphabetically.
  * Since some common swear words are simply animal names, those animal names are omitted from this list.
- * 
+ *
  * Provided by @rizasaputra
  */
 
@@ -60,5 +60,5 @@ return [
 	'titit',
 	'tolol',
 	'udik',
-	'upil'
+	'upil',
 ];
