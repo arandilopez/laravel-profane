@@ -128,6 +128,7 @@ Pull requests are welcome, but please make sure you provide unit tests to cover 
 - Serbian ( provided by [@Djuki](https://github.com/Djuki) )
 - Filipino ( provided by [@credocleo](https://github.com/credocleo) )
 - Romanian ( provided by [@rchioreanu](https://github.com/rchioreanu) )
+- Indonesian ( provided by [@rizasaputra](https://github.com/rizasaputra) )
 
 ## License
 This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
