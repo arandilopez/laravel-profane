@@ -3,6 +3,7 @@
 namespace LaravelProfane;
 
 use Illuminate\Contracts\Validation\Validator;
+use LaravelProfane\Contract\HandlerContract;
 
 class ProfaneValidator
 {
@@ -21,11 +22,11 @@ class ProfaneValidator
     protected $badwords = [];
 
     /**
-     * [__construct description].
+     * Undocumented function
      *
-     * @param Dictionary $dictionary [description]
+     * @param HandlerContract $dictionary
      */
-    public function __construct(Dictionary $dictionary)
+    public function __construct(HandlerContract $dictionary)
     {
         $this->dictionary = $dictionary;
         $this->badwords = $dictionary->getDictionary();

@@ -2,7 +2,7 @@
 
 namespace LaravelProfaneTests\Support;
 
-use LaravelProfane\Dictionary;
+use LaravelProfane\Handler\Dictionary\Dictionary;
 use LaravelProfane\ProfaneValidator;
 
 class ProfaneValidatorBuilder

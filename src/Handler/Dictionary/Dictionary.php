@@ -1,10 +1,11 @@
 <?php
 
-namespace LaravelProfane;
+namespace LaravelProfane\Handler\Dictionary;
 
 use Illuminate\Support\Facades\Config;
+use LaravelProfane\Contract\HandlerContract;
 
-class Dictionary
+class Dictionary implements HandlerContract
 {
     /**
      * [$dictionary description].
