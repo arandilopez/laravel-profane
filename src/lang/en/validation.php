@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'profane' => 'The :attribute contains vulgar content',
+    'profane' => 'Di :attribute di na le matlhapa',
 ];
