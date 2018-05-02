@@ -57,7 +57,6 @@ return [
     'foreskin',
     'gangbang',
     'gook',
-    'hell',
     'honkey',
     'humping',
     'jiz',
