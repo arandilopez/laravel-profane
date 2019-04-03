@@ -118,7 +118,7 @@ Pull requests are welcome, but please make sure you provide unit tests to cover 
 - English ( provided by [@arandilopez](https://github.com/arandilopez) )
 - Spanish ( provided by [@arandilopez](https://github.com/arandilopez) and [@xDidier901](https://github.com/xDidier901))
 - Italian ( provided by [@aletundo](https://github.com/aletundo) )
-- Brazilian Portuguese ( provided by [@ianrodriguesbr](https://github.com/ianrodriguesbr) )
+- Brazilian Portuguese ( provided by [@ianrodriguesbr](https://github.com/ianrodriguesbr)  and [@LeonardoTeixeira](https://github.com/LeonardoTeixeira))
 - Traditional Chinese ( provided by [@Nationalcat](https://github.com/Nationalcat) )
 - Slovak ( provided by [@kotass](https://github.com/kotass) )
 - Dutch (Netherlands) ( provided by [@Cannonb4ll](https://github.com/Cannonb4ll) and [@WouterVanmulken](https://github.com/WouterVanmulken))
