@@ -1,6 +1,6 @@
 {
   "name": "arandilopez/laravel-profane",
-  "description": "Laravel 5.X Profanity Valitador",
+  "description": "Laravel Profanity Valitador",
   "license": "MIT",
   "authors": [
     {
@@ -16,7 +16,7 @@
   },
   "minimum-stability": "stable",
   "require": {
-    "illuminate/support": "^5.2|^5.3|^5.4|^5.5"
+    "illuminate/support": ">=5.2"
   },
   "require-dev": {
     "phpunit/phpunit": "^4.8",
