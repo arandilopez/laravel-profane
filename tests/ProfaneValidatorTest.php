@@ -105,4 +105,22 @@ class ProfaneValidatorTest extends TestCase
 
         $this->assertFalse($builder->validate(['description', 'εισαι πουτανα', ['en', 'gr']]));
     }
+
+    public function test_can_validate_a_word_in_french()
+    {
+        $this->mockConfigs();
+
+        $builder = new ProfaneValidatorBuilder();
+
+        $this->assertFalse($builder->validate(['description', 'Va te faire enculer, sac à merde', ['en', 'fr']]));
+    }
+
+    public function test_can_validate_a_word_in_french_canadian()
+    {
+        $this->mockConfigs();
+
+        $builder = new ProfaneValidatorBuilder();
+
+        $this->assertFalse($builder->validate(['description', 'Décrisse gros cave', ['en', 'fr-ca']]));
+    }
 }
