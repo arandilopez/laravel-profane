@@ -13,7 +13,6 @@ class Str
      *
      * @return bool
      */
-
     public static function containsCaseless($haystack, $needles, $strict = false)
     {
         foreach ((array) $needles as $needle) {
