@@ -13,11 +13,13 @@ I made this package to perform a validation for swearwords using Laravel validat
 ## Installation
 
 Install via composer
+
 ```shell
 composer require arandilopez/laravel-profane
 ```
 
 ## Configuration
+
 Add the `ProfaneServiceProvider` class in your `config/app.php` file.
 
 ```php
@@ -98,10 +100,34 @@ class MyController extends Controller
 }
 ```
 
+#### Strict validation
+
+Now you can strictly validate the exact profane word in the content.
+
+```php
+<?php
+// ...
+class MyController extends Controller
+{
+    public function store(Request $request)
+    {
+        $this->validate($request, [
+            'username' => 'required|strictly_profane:es,en'
+        ]);
+
+        // ...
+    }
+}
+```
+
+This fixes known issues when you get a error in validation for words like `class` or `analysis`, as they include `ass` and `anal` respectively, but fails the validation for content like `sucker69`.
+
 ## Getting Help
+
 If you're stuck getting something to work, or need to report a bug, please [post an issue in the Github Issues for this project](https://github.com/arandilopez/laravel-profane/issues).
 
 ## Contributing
+
 If you're interesting in contributing code to this project, clone it by running:
 
 ```shell
@@ -112,9 +138,10 @@ Please read the [CONTRIBUTING](CONTRIBUTING.md) file.
 
 Pull requests are welcome, but please make sure you provide unit tests to cover your changes. **You can help to add and support more locales!**
 
-*Thanks to [@dorianneto](https://github.com/dorianneto) for his contributions.*
+_Thanks to [@dorianneto](https://github.com/dorianneto) for his contributions._
 
 ### Supported Locales
+
 - English ( provided by [@arandilopez](https://github.com/arandilopez) )
 - Spanish ( provided by [@arandilopez](https://github.com/arandilopez) and [@xDidier901](https://github.com/xDidier901))
 - Italian ( provided by [@aletundo](https://github.com/aletundo) )
@@ -131,4 +158,5 @@ Pull requests are welcome, but please make sure you provide unit tests to cover 
 - Indonesian ( provided by [@rizasaputra](https://github.com/rizasaputra) )
 
 ## License
+
 This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).

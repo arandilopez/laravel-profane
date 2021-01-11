@@ -21,6 +21,25 @@ class StrTest extends TestCase
         $this->assertTrue(Str::containsCaseless('Fuck! This class is so bad!', 'fUcK'));
     }
 
+    public function test_text_does_not_contain_match_in_strict_mode()
+    {
+        $this->assertFalse(Str::containsCaseless('This class is so bad!', 'ass', true));
+        $this->assertFalse(Str::containsCaseless('Theorem Analisys', 'anal', true));
+    }
+
+    public function test_text_contains_match_in_strict_mode()
+    {
+        $this->assertTrue(Str::containsCaseless('This class is a crap!', 'crap', true));
+        $this->assertFalse(Str::containsCaseless('Theorem Analisys', 'anal', true));
+        $this->assertFalse(Str::containsCaseless('Sucker69', 'sucker', true));
+    }
+
+    public function test_text_contains_match_in_not_strict_mode()
+    {
+        $this->assertTrue(Str::containsCaseless('This class is so bad!', 'ass', false));
+        $this->assertTrue(Str::containsCaseless('Theorem Analisys', 'anal', false));
+    }
+
     public function test_text_contains_the_same_insensitive_match_from_string()
     {
         $this->assertTrue(Str::containsCaseless('Fuck! This class is so bad!', 'Fuck'));

@@ -31,9 +31,13 @@ class ProfaneValidatorBuilder
      *
      * @return [type] [description]
      */
-    public function validate(array $parameters)
+    public function validate(array $parameters, $strict = false)
     {
         list($attribute, $text, $dictionaries) = $parameters;
+
+        if ($strict) {
+            return $this->build()->validateStrict($attribute, $text, $dictionaries);
+        }
 
         return $this->build()->validate($attribute, $text, $dictionaries);
     }
