@@ -40,7 +40,6 @@ class StrTest extends TestCase
         $this->assertTrue(Str::containsCaseless('Theorem Analisys', 'anal', false));
     }
 
-
     public function test_text_contains_the_same_insensitive_match_from_string()
     {
         $this->assertTrue(Str::containsCaseless('Fuck! This class is so bad!', 'Fuck'));

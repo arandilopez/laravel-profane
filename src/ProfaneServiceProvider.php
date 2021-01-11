@@ -10,10 +10,10 @@ class ProfaneServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->loadTranslationsFrom(__DIR__ . '/lang', 'laravel-profane');
+        $this->loadTranslationsFrom(__DIR__.'/lang', 'laravel-profane');
 
         $this->publishes([
-            __DIR__ . '/lang' => resource_path('lang/vendor/laravel-profane'),
+            __DIR__.'/lang' => resource_path('lang/vendor/laravel-profane'),
         ]);
 
         // Rule for caseless content matching

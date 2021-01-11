@@ -26,9 +26,9 @@ class ProfaneValidator
     /**
      * Method to extends to Validation Service.
      *
-     * @param string                                     $attribute
-     * @param mixed                                      $value
-     * @param array                                      $parameters
+     * @param string $attribute
+     * @param mixed  $value
+     * @param array  $parameters
      *
      * @return bool
      */
@@ -44,9 +44,9 @@ class ProfaneValidator
     /**
      * Method to extends to Validation Service for strict word matching.
      *
-     * @param string                                     $attribute
-     * @param mixed                                      $value
-     * @param array                                      $parameters
+     * @param string $attribute
+     * @param mixed  $value
+     * @param array  $parameters
      *
      * @return bool
      */
