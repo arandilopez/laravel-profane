@@ -2,27 +2,19 @@
 
 namespace LaravelProfane;
 
-use Illuminate\Contracts\Validation\Validator;
-
 class ProfaneValidator
 {
     /**
-     * [$dictionary description].
-     *
-     * @var [type]
+     * @var Dictionary
      */
     protected $dictionary;
 
     /**
-     * [$badwords description].
-     *
      * @var array
      */
     protected $badwords = [];
 
     /**
-     * [__construct description].
-     *
      * @param Dictionary $dictionary [description]
      */
     public function __construct(Dictionary $dictionary)
@@ -32,23 +24,39 @@ class ProfaneValidator
     }
 
     /**
-     * Method to extends to Validator.
+     * Method to extends to Validation Service.
      *
      * @param string                                     $attribute
-     * @param midex                                      $value
+     * @param mixed                                      $value
      * @param array                                      $parameters
-     * @param \Illuminate\Contracts\Validation\Validator $validator  [description]
      *
      * @return bool
      */
     public function validate($attribute, $value, $parameters)
     {
         if ($parameters) {
-            $this->dictionary->setDictionary($parameters);
-            $this->badwords = $this->dictionary->getDictionary();
+            $this->setDictionary($parameters);
         }
 
         return !$this->isProfane($value);
+    }
+
+    /**
+     * Method to extends to Validation Service for strict word matching.
+     *
+     * @param string                                     $attribute
+     * @param mixed                                      $value
+     * @param array                                      $parameters
+     *
+     * @return bool
+     */
+    public function validateStrict($attribute, $value, $parameters)
+    {
+        if ($parameters) {
+            $this->setDictionary($parameters);
+        }
+
+        return !$this->isProfane($value, true);
     }
 
     /**
@@ -58,11 +66,23 @@ class ProfaneValidator
      *
      * @return bool
      */
-    public function isProfane($text)
+    public function isProfane($text, $strict = false)
     {
         return Str::containsCaseless(
-            Str::removeAccent($text),
-            $this->badwords
+            $this->sanitizeText($text),
+            $this->badwords,
+            $strict
         );
+    }
+
+    private function setDictionary($dictionaries)
+    {
+        $this->dictionary->setDictionary($dictionaries);
+        $this->badwords = $this->dictionary->getDictionary();
+    }
+
+    private function sanitizeText($text)
+    {
+        return Str::removeAccent(strip_tags($text));
     }
 }

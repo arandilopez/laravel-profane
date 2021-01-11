@@ -13,11 +13,12 @@ class Str
      *
      * @return bool
      */
-    public static function containsCaseless($haystack, $needles)
+    public static function containsCaseless($haystack, $needles, $strict=false)
     {
         foreach ((array) $needles as $needle) {
             $needle = preg_quote($needle);
-            if ($needle != '' && preg_match("/$needle/iu", $haystack)) {
+            $regex = $strict ? "/\b$needle\b/iu" : "/$needle/iu";
+            if ($needle != '' && preg_match($regex, $haystack)) {
                 return true;
             }
         }
