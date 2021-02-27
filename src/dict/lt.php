@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'durnius',
+    'durnelis',
+    'durne',
+    'durnele',
+    'dura',
+    'kurva',
+    'debilas',
+    'debile',
+    'debilai',
+    'kekse',
+    'kekses',
+    'bybis',
+    'bybys',
+    'bybiai',
+    'bybiene',
+    'bybiagalvis',
+    'bybiagalviai',
+    'pyderas',
+    'pyderai',
+    'pederastas',
+    'pederastai',
+];
