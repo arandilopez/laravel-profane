@@ -59,4 +59,13 @@ class StrTest extends TestCase
     {
         $this->assertEquals('μαλακας', Str::removeAccent('μαλάκας'));
     }
+
+    public function test_remove_accents_in_vietnamese(){
+        $this->assertEquals('thằng lồn', Str::removeAccent('thằng lồn'));
+    }
+
+    public function test_text_contains_sensitive_match_from_string_in_vietnamese(){
+        $this->assertTrue(Str::containsCaseless('con đỉ mẹ mày', 'đỉ mẹ mày'));
+    }
+
 }

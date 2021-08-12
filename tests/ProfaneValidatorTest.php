@@ -150,4 +150,15 @@ class ProfaneValidatorTest extends TestCase
 
         $this->assertFalse($builder->validate(['description', 'Décrisse gros cave', ['en', 'fr-ca']]));
     }
+
+    public function test_can_validate_a_word_in_vietnamese(){
+        $this->mockConfigs();
+
+        $builder = new ProfaneValidatorBuilder('vi');
+
+        $word = 'ê con cạc thằng lồn';
+
+        $this->assertTrue($builder->build()->isProfane($word));
+    }
+
 }
