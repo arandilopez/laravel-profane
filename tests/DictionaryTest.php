@@ -55,4 +55,11 @@ class DictionaryTest extends TestCase
 
         $this->assertEquals($dictionary->getDictionary(), $expected);
     }
+
+    public function test_word_from_only_vi_files(){
+        $dictionary = new Dictionary(__DIR__.'/../src/dict/vi.php');
+        $expected = include __DIR__.'/../src/dict/vi.php';
+        $this->assertEquals($dictionary->getDictionary(), $expected);
+    }
+
 }
