@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'tg',
+    'gueule',
     'abruti',
     'andouille',
     'anal',
