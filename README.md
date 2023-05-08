@@ -51,14 +51,14 @@ This package register a custom validator. You can use in your controller's `vali
 // ...
 class MyController extends Controller
 {
-    public function store(Request $request)
-    {
-        $this->validate($request, [
-            'username' => 'required|profane'
-        ]);
+  public function store(Request $request)
+  {
+    $this->validate($request, [
+      'username' => 'required|profane',
+    ]);
 
-        // ...
-    }
+    // ...
+  }
 }
 ```
 
@@ -71,14 +71,14 @@ If you want to use others dictionaries you can pass them as parameters in the va
 // ...
 class MyController extends Controller
 {
-    public function store(Request $request)
-    {
-        $this->validate($request, [
-            'username' => 'required|profane:es,en'
-        ]);
+  public function store(Request $request)
+  {
+    $this->validate($request, [
+      'username' => 'required|profane:es,en',
+    ]);
 
-        // ...
-    }
+    // ...
+  }
 }
 ```
 
@@ -89,14 +89,15 @@ You can also send as parameter a path of a file which is a dictionary in order t
 // ...
 class MyController extends Controller
 {
-    public function store(Request $request)
-    {
-        $this->validate($request, [
-            'username' => 'required|profane:es,en,'.resource_path('lang/fr/dict.php')
-        ]);
+  public function store(Request $request)
+  {
+    $this->validate($request, [
+      'username' =>
+        'required|profane:es,en,' . resource_path('lang/fr/dict.php'),
+    ]);
 
-        // ...
-    }
+    // ...
+  }
 }
 ```
 
@@ -109,14 +110,14 @@ Now you can strictly validate the exact profane word in the content.
 // ...
 class MyController extends Controller
 {
-    public function store(Request $request)
-    {
-        $this->validate($request, [
-            'username' => 'required|strictly_profane:es,en'
-        ]);
+  public function store(Request $request)
+  {
+    $this->validate($request, [
+      'username' => 'required|strictly_profane:es,en',
+    ]);
 
-        // ...
-    }
+    // ...
+  }
 }
 ```
 
@@ -145,7 +146,7 @@ _Thanks to [@dorianneto](https://github.com/dorianneto) for his contributions._
 - English ( provided by [@arandilopez](https://github.com/arandilopez) )
 - Spanish ( provided by [@arandilopez](https://github.com/arandilopez) and [@xDidier901](https://github.com/xDidier901))
 - Italian ( provided by [@aletundo](https://github.com/aletundo) )
-- Brazilian Portuguese ( provided by [@ianrodriguesbr](https://github.com/ianrodriguesbr)  and [@LeonardoTeixeira](https://github.com/LeonardoTeixeira))
+- Brazilian Portuguese ( provided by [@ianrodriguesbr](https://github.com/ianrodriguesbr) and [@LeonardoTeixeira](https://github.com/LeonardoTeixeira))
 - Traditional Chinese ( provided by [@Nationalcat](https://github.com/Nationalcat) )
 - Slovak ( provided by [@kotass](https://github.com/kotass) )
 - Dutch (Netherlands) ( provided by [@Cannonb4ll](https://github.com/Cannonb4ll) and [@WouterVanmulken](https://github.com/WouterVanmulken))
@@ -153,7 +154,7 @@ _Thanks to [@dorianneto](https://github.com/dorianneto) for his contributions._
 - Malayalam ( provided by [@abinodh](https://github.com/abinodh) )
 - Russian ( provided by [@alex2sat](https://github.com/alex2sat) )
 - Serbian ( provided by [@Djuki](https://github.com/Djuki) )
-- Filipino ( provided by [@credocleo](https://github.com/credocleo) )
+- Filipino ( provided by [@credocleo](https://github.com/credocleo) and [@MarkCay](https://github.com/MarkCay) )
 - Romanian ( provided by [@rchioreanu](https://github.com/rchioreanu) )
 - Indonesian ( provided by [@rizasaputra](https://github.com/rizasaputra) )
 
