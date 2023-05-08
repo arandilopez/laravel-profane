@@ -70,7 +70,7 @@ class Dictionary
                     $words = array_merge($words, $dict);
                 }
             }
-            // just a single string, not an array
+        // just a single string, not an array
         } elseif (is_string($dictionary)) {
             if (file_exists($baseDictPath.$dictionary.'.php')) {
                 $dict = include $baseDictPath.$dictionary.'.php';
