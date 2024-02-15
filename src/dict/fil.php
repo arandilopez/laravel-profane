@@ -24,4 +24,12 @@ return [
     'hipon',
     'engot',
     'bruha',
+    'puta',
+    'kantot',
+    'yawa',
+    'piste',
+    'bayot',
+    'pakyu',
+    'supot',
+    'tang ina'
 ];
